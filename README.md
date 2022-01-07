@@ -38,6 +38,7 @@ cp .env.default .env
 ```
 ./launch.sh
 ```
+Then go to @Profédex on Telegram to begin!
 
 ## Commands
 
