@@ -225,7 +225,7 @@ def viewItemDetails(chatId, data):
     description = pokedex[chatId][profName]['Description']
     types = ''
     for i in range(len(pokedex[chatId][profName]['Type']) - 1) :
-        types += i.value + ', '
+        types += pokedex[chatId][profName]['Type'][i].value + ', '
     types += pokedex[chatId][profName]['Type'][-1].value
     location = pokedex[chatId][profName]['Location']
     image = pokedex[chatId][profName]['Image']
