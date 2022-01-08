@@ -1,10 +1,21 @@
+# Image placeholder taken from : https://qph.fs.quoracdn.net/main-qimg-cf89e8e6daa9dabc8174c303e4d53d3a
+
 import os
 
 import telebot
 from telebot.types import BotCommand, InlineKeyboardButton, InlineKeyboardMarkup, LabeledPrice
 from database import pokedex, profs, profs_name_list
+# import firebase_admin
 
-# Image placeholder taken from : https://qph.fs.quoracdn.net/main-qimg-cf89e8e6daa9dabc8174c303e4d53d3a
+# from firebase_admin import db
+
+# credentials = firebase_admin.credentials.Certificate('/Users/benlui/Downloads/service-account-file.json')
+
+# app = firebase_admin.initialize_app(credentials, {
+# 	'databaseURL' : "https://profedex-eded1-default-rtdb.asia-southeast1.firebasedatabase.app/"
+# })
+
+
 
 my_secret = os.environ['API_KEY']
 
@@ -34,9 +45,29 @@ def start(message):
     """
   Command that welcomes the user and configures the initial setup
   """
+    # userName = message.chat.username
+    # ref = db.reference(userName)
+    # snapshot = ref.get()
+    # if snapshot :
+    #     pokedex = snapshot
+    
+    # else :
+    #     userNameRef = ref.child(userName)
+    #     for prof, details in profs.items() :
+    #         details['isFound'] = False
+        
+    #     userNameRef.set(profs)  
+  
     chatId = message.chat.id
+    
+    if message.chat.type != 'private' :
+        bot.send_message(
+            chat_id = chatId,
+            text = 'Please add me to a private chat.'
+        )
 
     messageText = 'Welcome to Profédex'
+    
     # Initialise pokedex, connection with database
     pokedex[chatId] = dict()
 
