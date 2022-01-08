@@ -5,17 +5,6 @@ import os
 import telebot
 from telebot.types import BotCommand, InlineKeyboardButton, InlineKeyboardMarkup, LabeledPrice
 from database import pokedex, profs, profs_name_list
-# import firebase_admin
-
-# from firebase_admin import db
-
-# credentials = firebase_admin.credentials.Certificate('/Users/benlui/Downloads/service-account-file.json')
-
-# app = firebase_admin.initialize_app(credentials, {
-# 	'databaseURL' : "https://profedex-eded1-default-rtdb.asia-southeast1.firebasedatabase.app/"
-# })
-
-
 
 my_secret = os.environ['API_KEY']
 
