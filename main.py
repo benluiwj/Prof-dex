@@ -41,6 +41,7 @@ def start(message):
             chat_id = chatId,
             text = 'Please add me to a private chat.'
         )
+        return
 
     messageText = 'Welcome to Profédex'
     
