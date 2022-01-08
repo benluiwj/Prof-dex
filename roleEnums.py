@@ -1,7 +1,7 @@
 from enum import Enum
 
 
-class Role(Enum):
+class Role():
     head = 'Head'
     dpHead1 = 'Deputy Head (External Relations and Special Programs)'
     dpHead2 = 'Deputy Head (Research)'

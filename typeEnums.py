@@ -1,6 +1,6 @@
 from enum import Enum
 
-class Type(Enum) :
+class Type() :
         ai = 'Artificial Intelligence'
         database = 'Database'
         systemsAndNetworking = 'Systems and Networking'
