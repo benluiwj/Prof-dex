@@ -45,19 +45,6 @@ def start(message):
     """
   Command that welcomes the user and configures the initial setup
   """
-    # userName = message.chat.username
-    # ref = db.reference(userName)
-    # snapshot = ref.get()
-    # if snapshot :
-    #     pokedex = snapshot
-    
-    # else :
-    #     userNameRef = ref.child(userName)
-    #     for prof, details in profs.items() :
-    #         details['isFound'] = False
-        
-    #     userNameRef.set(profs)  
-  
     chatId = message.chat.id
     
     if message.chat.type != 'private' :
