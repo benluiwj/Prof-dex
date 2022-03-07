@@ -5,6 +5,8 @@ First the Profédex will be empty, with all the Professors name as `?????`. As s
 
 The `/list` and `/show` functions are available to view the entries of the Profédex that have been inputted by the user.
 
+Profédex is currently not working as the Firebase is not enabled.
+
 
 ## Developement Setup
 > The setup section and related scripts are largely inspired by those of [Acquity](https://github.com/acquity/api).
